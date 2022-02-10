@@ -1,20 +1,19 @@
 import { all, takeEvery, put, fork, call } from 'redux-saga/effects';
 import {
     FETCH_USERS,
-    SUCCESS,
-    FAILURE,
-    REQUEST
 } from '../constants/Users';
 import {
 } from "../actions/Users";
 import { requestUsersError, requestUsersSuccess, requestUsers } from 'redux/actions/Users';
 
+const delay = time => new Promise(resolve => setTimeout(resolve, time));
 
  function* watchFetchUsers() {
     yield takeEvery(FETCH_USERS, fetchUsersAsync);
   }
   
    function* fetchUsersAsync() {
+    yield call(delay, 2000);
     try {
       yield put(requestUsers());
       const data = yield call(() => {

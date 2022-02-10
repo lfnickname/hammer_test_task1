@@ -124,5 +124,31 @@
 
 	"sidenav.docs": "Docs",
 	"sidenav.docs.documentation": "Documentation",
-	"sidenav.docs.changelog": "Changelog"
+	"sidenav.docs.changelog": "Changelog",
+
+
+	"custom.Main": "Основное",
+	"custom.Dashboard": "Дашборд",
+	"custom.Catalog": "Каталог",
+	"custom.Items": "Товары",
+	"custom.Сategories": "Категории",
+	"custom.Collections": "Коллекции",
+	"custom.Combo": "Комбо",
+	"custom.Orders": "Заказы",
+	"custom.Clients": "Клиенты",
+	"custom.Clients_1": "Список клиентов",
+	"custom.Clients_2": "Группы клиентов",
+	"custom.Banners": "Баннеры",
+	"custom.Promo": "Промокоды",
+	"custom.Off": "Оффлайн точки",
+	"custom.Adress": "Адреса",
+	"custom.Geo": "Геозоны",
+	"custom.Employee": "Сотрудники",
+	"custom.Mailing": "Рассылки",
+	"custom.dev": "Системные",
+	"custom.Setting": "Настройки",
+	"custom.Mobile": "Мобильное приложение",
+	"custom.Logs": "Логи"
+
+
 }
