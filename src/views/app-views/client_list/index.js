@@ -17,7 +17,8 @@ function UserList ({fetchUsers, store, loaded}) {
 
 	if (editProf) return <EditProfile id={editProf} setEditProf={setEditProf}/>
 
-	function deleteUser (userId){
+	function deleteUser (e, userId){
+		e.stopPropagation()
 		setUsers (users.filter(item => item.id !== userId))
 		message.success({ content: `Deleted user ${userId}`, duration: 2 });
 	}
@@ -76,7 +77,7 @@ function UserList ({fetchUsers, store, loaded}) {
 					</Tooltip>
 					
 					<Tooltip title="Delete">
-						<Button danger icon={<DeleteOutlined />} onClick={()=> {deleteUser(elm.id)}} size="small"/>
+						<Button danger icon={<DeleteOutlined />} onClick={(e)=> {deleteUser(e, elm.id)}} size="small"/>
 					</Tooltip>
 				</div>
 			)
